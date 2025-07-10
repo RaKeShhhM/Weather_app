@@ -1,0 +1,74 @@
+/* SearchBox.css */
+.SearchBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+}
+
+.SearchBox form {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.SearchBox form:hover {
+    transform: scale(1.05);
+}
+
+/* Style for the input field */
+.SearchBox input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.SearchBox input:focus {
+    border-color: #66ffcc;
+    box-shadow: 0px 0px 10px rgba(102, 255, 204, 0.8);
+}
+
+/* Search Button */
+.SearchBox button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #4CAF50, #2E7D32);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+.SearchBox button:hover {
+    background: linear-gradient(135deg, #66ff66, #4CAF50);
+    transform: scale(1.05);
+}
+
+/* Error Message */
+.SearchBox p {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .SearchBox form {
+        width: 80%;
+    }
+}
