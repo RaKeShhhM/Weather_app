@@ -12,7 +12,7 @@ A sleek and responsive weather forecast app built using **ReactJS** and **Vite**
 
 
 ## 📸 Preview
-![Weather App Screenshot] (preview.png)
+![Weather App Screenshot] (public/preview.png)
 
 
 ---
